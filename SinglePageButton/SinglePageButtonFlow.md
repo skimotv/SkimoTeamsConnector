@@ -31,6 +31,6 @@ This is the function passed in as the **callback**
 ## index.html
 Calls the **signIn()** method from **authPopup.js** as well as additional methods used to format information from the endpoints 
 
-    *For now, these additional methods are seeProfile() and readMail*
+*For now, these additional methods are seeProfile() and readMail*
 
 

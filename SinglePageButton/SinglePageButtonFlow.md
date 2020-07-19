@@ -14,14 +14,14 @@ Information about user validation availble at [this link](https://docs.microsoft
 
 The **token** is obtained from the access token given in the **getTokenPopup** response 
 
-#### graphConfig.js
+### graphConfig.js
 Contains information for the first parameter of **callMSGraph**, the **endpoint**
 
 Allows user to add endpoints as needed for Microsoft Graph API services
 
 Ex: **https://graph.microsoft.com/v1.0/me** - returns JSON response of information about user 
 
-#### ui.js
+### ui.js
 Contains information for the third parameter of **callMSGraph**, the **callback**
 
 **function updateUI(data, endpoint)** - updates the response on the website based on which endpoint was selected

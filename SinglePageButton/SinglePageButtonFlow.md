@@ -1,5 +1,5 @@
 # Flow of Code for SinglePageButton Directory
-##### The following explanation limits the summarization of the code to information only pertininent to users wanting to modify which endpoints and subsequent data are obtained and displayed from the Microsoft Graph REST API
+#### The following explanation limits the summarization of the code to information only pertininent to users wanting to modify which endpoints and subsequent data are obtained and displayed from the Microsoft Graph REST API
 ## authConfig.js
 **loginRequest** - ID token for Microsoft Identiy Platform Endpoints
 

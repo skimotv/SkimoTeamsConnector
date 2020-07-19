@@ -16,11 +16,9 @@ Visit the [Skimo Website](https://skimo.tv/) to test functionality.
 
 Allow users to login to Microsoft account using OAuth 2.0
 
-Retrieve a list of teams that the user is a member of
+Retrieve a list of all Items in a User's OneDrive
 
-Retrieve a list of items in the selected team's drive 
-
-Retrieve a list of calls from the items in the drive
+Retrieve a list of calls from a specific folder in OneDrive
 
 Display a list of teams calls on the skimo website for the user
 
@@ -33,13 +31,11 @@ For each function - summarize step by step how the function works at a user leve
 ## Microsoft Login using OAuth 2.0
 Must use a registered Microsoft work/school account
 
-## Retrieving List of Joined Teams  
-Use GET https://graph.microsoft.com/v1.0/me/joinedTeams : *will produce a list of joined teams containing the **team id***
+## Retrieving List of all items in OneDrive 
+Use GET https://graph.microsoft.com/v1.0/me/drive/root/children : *will produce a list of items in Drive containing the **driveId** and **itemId***
 
-## Retrieving List of Items in Team Drive 
-Use GET https://graph.microsoft.com/v1.0/groups/{group-id-for-teams}/drive/root/children : *the **group id** will be the **team id** obtained prev.* 
-
-## Retrieve List of Calls from Items 
+## Retrieving List of calls in a folder in OneDrive
+Use GET https://graph.microsoft.com/v1.0//drives/{drive-id}/items/{item-id}/children : *insert **driveId** and **itemId** from prev step* 
 
 ## Display List of Calls in Skimo
 
